@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroClass Games - Games</title>
+   <link rel="stylesheet" href="/css/games.css">
+</head>
+<body>
+    <header>
+        <h1>ZeroClass Games - List of Games</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <div class="container">
+        <section class="game-category">
+            <h2>Interactive Games</h2>
+            <ul class="game-list">
+                <li class="game-item" onclick="confirmAndOpen('Chess')">Chess</li>
+                <li class="game-item" onclick="confirmAndOpen('Tic Tac Toe')">Tic Tac Toe</li>
+                <li class="game-item" onclick="confirmAndOpen('Word Search')">Word Search</li>
+            </ul>
+        </section>
+        <section class="game-category">
+            <h2>Computer-Based Games</h2>
+            <ul class="game-list">
+                <li class="game-item" onclick="confirmAndOpen('Age of Empires')">Age of Empires</li>
+                <li class="game-item" onclick="confirmAndOpen('Counter-Strike')">Counter-Strike</li>
+                <li class="game-item" onclick="confirmAndOpen('Dot&Box')">Dots and Boxes</li>
+            </ul>
+        </section>
+        <section class="game-category">
+            <h2>Brain Teasers</h2>
+            <ul class="game-list">
+                <li class="game-item" onclick="confirmAndOpen('Sudoku')">Sudoku</li>
+                <li class="game-item" onclick="confirmAndOpen('Crossword Puzzle')">Crossword Puzzle</li>
+                <li class="game-item" onclick="confirmAndOpen('Chess')">Chess</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 ZeroClass Games. All rights reserved.</p>
+    </footer>
+    <script>
+        function confirmAndOpen(gameName) {
+            if (confirm("Are you sure you want to play " + gameName + "?")) {
+                window.open(gameName.toLowerCase() + ".html", "_blank");
+            }
+        }
+    </script>
+</body>
+</html>
