@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #00ff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+.cell {
+    background-color: #000;
+    border: 1px solid #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00ff00;
+}
+.cell:hover {
+    background-color: #222;
+}
+.button-container {
+    margin-top: auto;
+}
+.button {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #00dd00;
+}
+#message {
+    font-size: 36px;
+    margin-top: 20px;
+    display: none;
+}
